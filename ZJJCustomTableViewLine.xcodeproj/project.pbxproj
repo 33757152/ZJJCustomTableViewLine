@@ -13,6 +13,9 @@
 		891BA4B81F4EC99000B5D8EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891BA4B61F4EC99000B5D8EE /* Main.storyboard */; };
 		891BA4BA1F4EC99000B5D8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891BA4B91F4EC99000B5D8EE /* Assets.xcassets */; };
 		891BA4BD1F4EC99000B5D8EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891BA4BB1F4EC99000B5D8EE /* LaunchScreen.storyboard */; };
+		891BA4C81F4ECA8300B5D8EE /* ZJJShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891BA4C71F4ECA8300B5D8EE /* ZJJShowViewController.m */; };
+		892980611F4FC5D800C6A21A /* ZJJBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 892980601F4FC5D800C6A21A /* ZJJBaseTableViewCell.m */; };
+		892980641F4FCB4200C6A21A /* ZJJCusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 892980631F4FCB4200C6A21A /* ZJJCusTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		891BA4B91F4EC99000B5D8EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		891BA4BC1F4EC99000B5D8EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		891BA4BE1F4EC99000B5D8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		891BA4C61F4ECA8300B5D8EE /* ZJJShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJShowViewController.h; sourceTree = "<group>"; };
+		891BA4C71F4ECA8300B5D8EE /* ZJJShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJShowViewController.m; sourceTree = "<group>"; };
+		891BA4C91F4EF53300B5D8EE /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		8929805F1F4FC5D800C6A21A /* ZJJBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJBaseTableViewCell.h; sourceTree = "<group>"; };
+		892980601F4FC5D800C6A21A /* ZJJBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJBaseTableViewCell.m; sourceTree = "<group>"; };
+		892980621F4FCB4200C6A21A /* ZJJCusTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJCusTableViewCell.h; sourceTree = "<group>"; };
+		892980631F4FCB4200C6A21A /* ZJJCusTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJCusTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 		891BA4AC1F4EC99000B5D8EE /* ZJJCustomTableViewLine */ = {
 			isa = PBXGroup;
 			children = (
+				891BA4C41F4ECA1D00B5D8EE /* Controller */,
+				891BA4C51F4ECA1D00B5D8EE /* View */,
 				891BA4B01F4EC99000B5D8EE /* AppDelegate.h */,
 				891BA4B11F4EC99000B5D8EE /* AppDelegate.m */,
 				891BA4B31F4EC99000B5D8EE /* ViewController.h */,
@@ -66,6 +78,7 @@
 				891BA4B91F4EC99000B5D8EE /* Assets.xcassets */,
 				891BA4BB1F4EC99000B5D8EE /* LaunchScreen.storyboard */,
 				891BA4BE1F4EC99000B5D8EE /* Info.plist */,
+				891BA4C91F4EF53300B5D8EE /* Header.h */,
 				891BA4AD1F4EC99000B5D8EE /* Supporting Files */,
 			);
 			path = ZJJCustomTableViewLine;
@@ -77,6 +90,26 @@
 				891BA4AE1F4EC99000B5D8EE /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		891BA4C41F4ECA1D00B5D8EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				891BA4C61F4ECA8300B5D8EE /* ZJJShowViewController.h */,
+				891BA4C71F4ECA8300B5D8EE /* ZJJShowViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		891BA4C51F4ECA1D00B5D8EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8929805F1F4FC5D800C6A21A /* ZJJBaseTableViewCell.h */,
+				892980601F4FC5D800C6A21A /* ZJJBaseTableViewCell.m */,
+				892980621F4FCB4200C6A21A /* ZJJCusTableViewCell.h */,
+				892980631F4FCB4200C6A21A /* ZJJCusTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891BA4C81F4ECA8300B5D8EE /* ZJJShowViewController.m in Sources */,
 				891BA4B51F4EC99000B5D8EE /* ViewController.m in Sources */,
+				892980641F4FCB4200C6A21A /* ZJJCusTableViewCell.m in Sources */,
 				891BA4B21F4EC99000B5D8EE /* AppDelegate.m in Sources */,
 				891BA4AF1F4EC99000B5D8EE /* main.m in Sources */,
+				892980611F4FC5D800C6A21A /* ZJJBaseTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B77E2S42YJ;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/ZJJCustomTableViewLine/Header.h\"";
 				INFOPLIST_FILE = ZJJCustomTableViewLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.fengpu.ZJJCustomTableViewLine;
@@ -288,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B77E2S42YJ;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/ZJJCustomTableViewLine/Header.h\"";
 				INFOPLIST_FILE = ZJJCustomTableViewLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.fengpu.ZJJCustomTableViewLine;
@@ -314,6 +352,7 @@
 				891BA4C31F4EC99000B5D8EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
